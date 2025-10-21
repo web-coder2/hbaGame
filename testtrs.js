@@ -53,24 +53,50 @@ function (dojo, declare, gamegui, counter) {
             this.getGameAreaElement().insertAdjacentHTML('beforeend', `
                 <div id="player-tables"></div>
             `);
+
+            this.getGameAreaElement().insertAdjacentHTML('beforeend', `
+            <div class="allPlayers">
+                <div class="gameField">
+                    <h3>Игровое поле</h3>
+                </div>
+                <div class="fieldIT">
+                    <h3>Поле IT</h3>
+                </div> 
+                <div class="cards">
+                    <div class="card">
+                        <p>Событие 1</p>
+                    </div>
+                    <div class="card ml-5">
+                        <p>Событие 2</p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu-info">
+                        <h2>Айти Арена</h2>
+                        <p>1 раунд</p>
+                        <p>P - бонус</p>
+                    </div>
+                </div>
+            </div>
+            `);
             
             // Setting up player boards
-            Object.values(gamedatas.players).forEach(player => {
-                // example of setting up players boards
-                this.getPlayerPanelElement(player.id).insertAdjacentHTML('beforeend', `
-                    <span id="energy-player-counter-${player.id}"></span> Energy
-                `);
-                const counter = new ebg.counter();
-                counter.create(`energy-player-counter-${player.id}`, { value: player.energy, playerCounter: 'energy', playerId: player.id });
+            // Object.values(gamedatas.players).forEach(player => {
+            //     // example of setting up players boards
+            //     this.getPlayerPanelElement(player.id).insertAdjacentHTML('beforeend', `
+            //         <span id="energy-player-counter-${player.id}"></span> Energy
+            //     `);
+            //     const counter = new ebg.counter();
+            //     counter.create(`energy-player-counter-${player.id}`, { value: player.energy, playerCounter: 'energy', playerId: player.id });
 
-                // example of adding a div for each player
-                document.getElementById('player-tables').insertAdjacentHTML('beforeend', `
-                    <div id="player-table-${player.id}">
-                        <strong>${player.name}</strong>
-                        <div>Player zone content goes here</div>
-                    </div>
-                `);
-            });
+            //     // example of adding a div for each player
+            //     document.getElementById('player-tables').insertAdjacentHTML('beforeend', `
+            //         <div id="player-table-${player.id}">
+            //             <strong>${player.name}</strong>
+            //             <div>Player zone content goes here</div>
+            //         </div>
+            //     `);
+            // });
             
             // TODO: Set up your game interface here, according to "gamedatas"
             
