@@ -75,7 +75,7 @@ function (dojo, declare, gamegui, counter) {
                 </div>
                 <div class="menu">
                     <div class="menu-info">
-                        <h2>Айти Арена</h2>
+                        <img src="https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/logo.png">
                         <p>1 раунд</p>
                         <p>P - бонус</p>
                     </div>
