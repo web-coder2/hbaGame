@@ -62,13 +62,16 @@ function (dojo, declare, gamegui, counter) {
                 <div class="fieldIT">
                     <h3>Поле IT</h3>
                 </div> 
-                <div class="cards">
-                    <div class="card">
-                        <p>Событие 1</p>
+                <div class="cards-container">
+                    <div class="cards">
+                        <div class="card">
+                            <p>Событие 1</p>
+                        </div>
+                        <div class="card ml-5">
+                            <p>Событие 2</p>
+                        </div>
                     </div>
-                    <div class="card ml-5">
-                        <p>Событие 2</p>
-                    </div>
+                    <div class="paiay"></div>
                 </div>
                 <div class="menu">
                     <div class="menu-info">

@@ -6,7 +6,7 @@
     margin-left: 5%;
     width: 25%;
     height: 350px;
-    background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/hbagame/999999-9999/img/5.png');
+    background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/11.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -18,8 +18,8 @@
 .fieldIT {
     margin-left: 5%;
     width: 20%;
-    height: 250px;
-    background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/hbagame/999999-9999/img/2.png');
+    height: 350px;
+    background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/hbagame/999999-9999/img/5.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,17 +28,20 @@
     text-align: center;
 }
 
-.cards {
-    display: flex;
+.cards-container {
     margin-left: 5%;
     width: 22%;
+}
+
+.cards {
+    display: flex;
     color: white;
     text-align: center;
 }
 
 .card {
     width: 45%;
-    height: 200px;
+    height: 220px;
     background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/hbagame/999999-9999/img/3.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -50,15 +53,20 @@
 }
 
 .menu {
+    height: 350px;
     width: 18%;
     margin-left: 5%;
+    /* color: white; */
+    background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/grayscale.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: black;
-    color: white;
 }
 
 .menu-info {
     margin-left: 30px;
-    background-color: rgb(40, 39, 39);
+    /* background-color: rgb(40, 39, 39); */
     margin-right: 30px;
     height: 90%;
 }
@@ -73,4 +81,12 @@
 .menu-info p {
     color: yellow;
     padding-left: 20px;
+}
+
+.paiay {
+    background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/hbagame/999999-9999/img/2.png');
+    background-size: 100% 100%;
+    margin-top: 20px;
+    height: 100px;
+    width: 100%;
 }
