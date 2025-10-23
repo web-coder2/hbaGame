@@ -59,9 +59,6 @@ function (dojo, declare, gamegui, counter) {
                 <div class="gameField">
                     <h3>Игровое поле</h3>
                 </div>
-                <div class="fieldIT">
-                    <h3>Поле IT</h3>
-                </div> 
                 <div class="cards-container">
                     <div class="cards">
                         <div class="card">
@@ -75,13 +72,32 @@ function (dojo, declare, gamegui, counter) {
                 </div>
                 <div class="menu">
                     <div class="menu-info">
-                        <img src="https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/logo.png">
-                        <p>1 раунд</p>
-                        <p>P - бонус</p>
+                        <img src="https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/logo2.png">
+                        <h2>1 раунд</h2>
+                        <h2>P - бонус</h2>
                     </div>
                 </div>
             </div>
+            <div style="display: flex;">
+                <div class="fieldIT">
+                    <h3>Поле IT</h3>
+                </div>
+                <div class="pamyatka2">
+                    <h3>Памятка игрока</h3>
+                </div>
+            <div>
             `);
+
+            this.getGameAreaElement().insertAdjacentHTML('beforeend', `
+                <div class="player-container">
+                    <div class="pamyatka">
+                        <h3>Памятка игрока</h3>
+                    </div>
+                    <div class="player-planshet">
+                        <h3>Планешет игрока</h3>
+                    </div>
+                </div>
+            `)
             
             // Setting up player boards
             // Object.values(gamedatas.players).forEach(player => {
@@ -230,6 +246,7 @@ function (dojo, declare, gamegui, counter) {
             });        
         },    
 
+
         
         ///////////////////////////////////////////////////
         //// Reaction to cometD notifications
@@ -266,6 +283,8 @@ function (dojo, declare, gamegui, counter) {
             // TODO: play the card in the user interface.
         },    
         
+        
         */
+
    });             
 });

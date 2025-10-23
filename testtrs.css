@@ -4,7 +4,7 @@
 
 .gameField {
     margin-left: 5%;
-    width: 25%;
+    width: 45%;
     height: 350px;
     background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/11.png');
     background-size: 100% 100%;
@@ -17,8 +17,11 @@
 
 .fieldIT {
     margin-left: 5%;
-    width: 20%;
+    margin-top: 50px;
+
+    width: 45%;
     height: 250px;
+    
     background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/projField.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -41,7 +44,7 @@
 
 .card {
     width: 45%;
-    height: 220px;
+    height: 180px;
     background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/hbagame/999999-9999/img/3.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -61,7 +64,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .menu-info {
@@ -72,17 +75,18 @@
 }
 
 .menu-info h2 {
-    color: white;
+    /* color: white; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    padding: 10px 20px;
-    margin-bottom: -10px;
+    text-align: center;
 }
 
 .menu-info img {
     width: 100%;
-    height: 100px;
-    margin-bottom: 20px;
+    height: 200px;
+    margin-bottom: -50px;
+    /* background-color: red; */
+    margin-top: -30px;
 }
 
 .menu-info p {
@@ -98,4 +102,37 @@
     height: 100px;
     width: 70%;
     margin-left: 15%;
+}
+
+.player-container {
+    margin-top: 100px;
+    height: 400px;
+    display: flex;
+}
+
+.pamyatka {
+    background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/pamyatka.png');
+    background-size: 100% 100%;
+    margin-left: 5%;
+    width: 20%;
+    text-align: center;
+    color: white;
+}
+
+.pamyatka2 {
+    background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/pamyatka2.png');
+    background-size: 100% 100%;
+    margin-left: 5%;
+    width: 20%;
+    text-align: center;
+    color: white;
+}
+
+.player-planshet {
+    text-align: center;
+    color: white;
+    margin-left: 5%;
+    width: 40%;
+    background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/PT-Y.png');
+    background-size: 100% 100%;
 }
