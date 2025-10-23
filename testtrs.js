@@ -88,6 +88,44 @@ function (dojo, declare, gamegui, counter) {
             <div>
             `);
 
+            const paiayElement = document.querySelector('.paiay');
+
+            let paiayElementStatus = true; // true = первый событие false = второй событие
+
+            if (paiayElement) {
+                paiayElement.style.transition = 'margin-left 0.5s ease';
+
+                paiayElement.addEventListener('click', () => {
+                    paiayElementStatus = !paiayElementStatus;
+
+                    if (paiayElementStatus) {
+                        paiayElement.style.marginLeft = '0%';
+                    } else {
+                        paiayElement.style.marginLeft = '55%';
+                    }
+                });
+            }
+
+
+            const pamyatka2Element = document.querySelector('.pamyatka2')
+
+            let pamyatkaStatus = true // true со стороны последовательности ходов false = со стороны личных целей
+
+            if (pamyatka2Element) {
+                pamyatka2Element.style.backgroundImage = "url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/pamyatka2.png')";
+              
+                pamyatka2Element.addEventListener('click', () => {
+
+                  pamyatkaStatus = !pamyatkaStatus;
+              
+                  if (pamyatkaStatus) {
+                    pamyatka2Element.style.backgroundImage = "url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/pamyatka2.png')";
+                  } else {
+                    pamyatka2Element.style.backgroundImage = "url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/pamyatka.png')";
+                  }
+                });
+              }
+
             this.getGameAreaElement().insertAdjacentHTML('beforeend', `
                 <div class="player-container">
                     <div class="pamyatka">

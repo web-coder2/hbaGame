@@ -19,7 +19,7 @@
     margin-left: 5%;
     margin-top: 50px;
 
-    width: 45%;
+    width: 42.5%;
     height: 250px;
     
     background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/projField.png');
@@ -33,7 +33,7 @@
 
 .cards-container {
     margin-left: 5%;
-    width: 22%;
+    width: 32%;
 }
 
 .cards {
@@ -58,7 +58,7 @@
 .menu {
     height: 350px;
     width: 18%;
-    margin-left: 5%;
+    margin-left: 0%;
     /* color: white; */
     /* background-image: url('https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/grayscale.png'); */
     background-size: 100% 100%;
@@ -100,8 +100,8 @@
     background-size: 100% 100%;
     margin-top: 20px;
     height: 100px;
-    width: 70%;
-    margin-left: 15%;
+    width: 45%;
+    /* margin-left: 15%; */
 }
 
 .player-container {
