@@ -60,25 +60,24 @@ function (dojo, declare, gamegui, counter) {
                     <h3>Игровое поле</h3>
                 </div>
                 <div class="cards-container">
-                    <div class="cards">
-                        <div class="card">
-                            <p>Событие 1</p>
-                        </div>
-                        <div class="card ml-5">
-                            <p>Событие 2</p>
-                        </div>
+                    <div class="card">
+                        <p>Событие 1</p>
                     </div>
-                    <div class="paiay"></div>
+                    <div class="card mt-5">
+                        <p>Событие 2</p>
+                    </div>
                 </div>
                 <div class="menu">
                     <div class="menu-info">
                         <img src="https://studio.boardgamearena.com:8084/data/themereleases/current/games/testtrs/999999-9999/img/logo2.png">
-                        <h2>1 раунд</h2>
-                        <h2>P - бонус</h2>
+                        <div class="paiay">
+                            <h2 class="bonusName">P</h2>
+                        </div>
+                        <!--<h2>1 раунд</h2>-->
                     </div>
                 </div>
             </div>
-            <div style="display: flex;">
+            <div class="secondSection">
                 <div class="fieldIT">
                     <h3>Поле IT</h3>
                 </div>
@@ -90,21 +89,25 @@ function (dojo, declare, gamegui, counter) {
 
             const paiayElement = document.querySelector('.paiay');
 
-            let paiayElementStatus = true; // true = первый событие false = второй событие
+            paiayElement.addEventListener('click', () => {
+                alert('это P бонус')
+            })
 
-            if (paiayElement) {
-                paiayElement.style.transition = 'margin-left 0.5s ease';
+            // let paiayElementStatus = true; // true = первый событие false = второй событие
 
-                paiayElement.addEventListener('click', () => {
-                    paiayElementStatus = !paiayElementStatus;
+            // if (paiayElement) {
+            //     paiayElement.style.transition = 'margin-left 0.5s ease';
 
-                    if (paiayElementStatus) {
-                        paiayElement.style.marginLeft = '0%';
-                    } else {
-                        paiayElement.style.marginLeft = '55%';
-                    }
-                });
-            }
+            //     paiayElement.addEventListener('click', () => {
+            //         paiayElementStatus = !paiayElementStatus;
+
+            //         if (paiayElementStatus) {
+            //             paiayElement.style.marginLeft = '0%';
+            //         } else {
+            //             paiayElement.style.marginLeft = '55%';
+            //         }
+            //     });
+            // }
 
 
             const pamyatka2Element = document.querySelector('.pamyatka2')
@@ -133,6 +136,26 @@ function (dojo, declare, gamegui, counter) {
                     </div>
                     <div class="player-planshet">
                         <h3>Планешет игрока</h3>
+                    </div>
+                    <div class="office">
+                        <div class="sale-office">
+                            <div class="office-mans">
+                                <div class="office-man"></div>
+                                <div class="office-man"></div>
+                                <div class="office-man"></div>
+                            </div>
+                        </div>
+                        <div class="back-office">
+                            <div class="office-mans">
+                                <div class="office-man"></div>
+                            </div>
+                        </div>
+                        <div class="tech-office">
+                            <div class="office-mans">
+                                <div class="office-man"></div>
+                                <div class="office-man"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             `)
